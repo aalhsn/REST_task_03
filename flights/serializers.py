@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from .models import Flight, Booking
 
 
@@ -25,3 +24,4 @@ class UpdateBookingSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Booking
 		fields = ['date', 'passengers']
+
